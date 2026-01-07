@@ -1,4 +1,4 @@
-package POOBasico.exercicio1;
+package POOBasico.exercicio1.questao1;
 
 
 // Essa classe calcula a área e circunferência de um círculo.

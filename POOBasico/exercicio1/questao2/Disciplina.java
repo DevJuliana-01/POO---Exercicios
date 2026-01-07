@@ -1,4 +1,4 @@
-package POOBasico.exercicio1;
+package POOBasico.exercicio1.questao2;
 
 // classe com métodos para calcular a média parcial(com as notas bimestrais) e a média final(com todas as notas, caso o aluno tenha ficado na prova final)
 // média parcial ponderada com pesos 2 e 3
