@@ -13,7 +13,7 @@ public class Main {
         double base = sc.nextDouble();
 
         Retangulo caixa = new Retangulo(base, altura);
-        System.out.println("Area do retângulo: ");
+        System.out.println("Área do retângulo: ");
         System.out.println(caixa.calcArea());
 
         System.out.println("Diagonal do retângulo: ");
