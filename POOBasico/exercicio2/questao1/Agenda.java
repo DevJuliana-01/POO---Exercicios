@@ -26,6 +26,34 @@ public class Agenda {
     }
 
     public Compromisso[] listar(){
-        return comps.toArray(new Compromisso[0]);
+        return comps.toArray(new Compromisso[0]); //copia os elementos de comps para um vetor
     }
+
+    public Compromisso[] pesquisar(int mes, int ano){
+    // conta quantos compromissos são válidos
+    int validos = 0;
+    for (int i = 0; i < k; i++) {
+        Compromisso c = comps.get(i);
+        if (c.getData().getMonthValue() == mes &&
+            c.getData().getYear() == ano) {
+            validos++;
+        }
+    }
+
+    // cria um vetor para armazenar os eventos válidos
+    Compromisso[] resultado = new Compromisso[validos];
+
+    //preenchendo o vetor resultado com todos os eventos válidos
+    int cont = 0;
+    for (int i = 0; i < k; i++) {
+        Compromisso c = comps.get(i);
+        if (c.getData().getMonthValue() == mes &&
+            c.getData().getYear() == ano) {
+            resultado[cont] = c;
+            cont++;
+        }
+    }
+    return resultado;
+}
+
 }
